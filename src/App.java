@@ -1,7 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
         int[] numeros = {10, 0, -5, 5, 15, 2};
-        runBubblesort();
+        //runBubblesort();
+        runBubblesortAvz();
     }
     
     public static void runBubblesort(){
@@ -16,11 +17,23 @@ public class App {
         //bubblesort.printArreglo(numeros);
         
         bubblesort.printArreglo(numeros);
-        bubblesort.sort(numeros,asc:true);
+        bubblesort.sort(numeros , true);
         bubblesort.printArreglo(numeros);
-        bubblesort.sort(numeros, asc : false);
+        bubblesort.sort(numeros,  false);
         bubblesort.printArreglo(numeros);
     }
 
+    private static void runBubblesortAvz() {
+        int[] array= new int[]{9,2,3,0,8,5};
+       
+        //instanciar la clase
+        BubbleSortAvz bSortAvz = new BubbleSortAvz(array);
+        bSortAvz.printArray();
+        bSortAvz.sort( true);
+        bSortAvz.printArray();
+        
+    }
+
+    
 }
 

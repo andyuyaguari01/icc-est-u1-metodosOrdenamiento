@@ -1,7 +1,7 @@
 public class BubbleSort {
     // Constructor
     public BubbleSort(){
-       System.out.println("Se creo");
+       System.out.println("Se creo la clase en el constructor");
 
     }
     public void sorAscendente(int numeros[]){
@@ -53,9 +53,9 @@ public class BubbleSort {
 
     
     public static void printlnArreglo(int[] numeros) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'printlnArreglo'");
+        
     }
+    
 
 
 
